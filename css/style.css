@@ -51,6 +51,10 @@ img{
     height: auto;
 }
 
+input{
+    outline: none;
+}
+
 
 
 
@@ -466,6 +470,7 @@ img{
 }
 .social-media-area{
     font-family: "Roboto", sans-serif;
+    font-weight: 500;
     font-size: 16px;
     color: var(--white-color);
     line-height: 1.5;
@@ -506,7 +511,7 @@ img{
 }
 
 .subscribe-footer-area{
-    margin-left: 80px;
+    margin-left: auto;
 }
 
 .subscribe-footer-topic{
@@ -515,6 +520,7 @@ img{
     color: var(--white-color);
     line-height: 1.5;
     margin-bottom: 16px;
+    font-weight: 500;
 }
 
 .footer-feedback{
@@ -532,6 +538,12 @@ img{
     padding-top: 8px;
     padding-bottom: 8px;
     padding-left: 16px;
+    color: var(--accent-color);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    
+    letter-spacing: 0.04em;
 }
 
 .footer-email-input::placeholder{
@@ -552,7 +564,7 @@ img{
 .footer-button-subscribe{
     width: 165px;
     height: 40px;
-    padding: 8px 64px 8px 24px;
+    padding: 8px 10px 8px 24px;
     background-color: var(--primary-brend-color);
     color: var(--white-color);
     letter-spacing: 0.04em;   
@@ -562,20 +574,16 @@ img{
     font-family: inherit;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    display: inline-block;
     border-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
-.footer-button{
-    position: relative;
-}
+
 
 .subscribe-icon {
-    position: absolute;
-    top: 50%;
-    right: 24px;
-    fill: var(--white-color);
-    transform: translateY(-50%) ;
+    margin-left: 16px;
+   fill: var(--white-color);
 }
 
 .footer-button-subscribe:hover, .footer-button-subscribe:focus{
@@ -736,7 +744,7 @@ img{
 
 .modal{
     width: 408px;
-    min-height: 584px;
+    /* min-height: 584px; */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -745,7 +753,7 @@ img{
     background-color: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;   
-    padding: 24px;
+    padding: 72px 24px 24px;
 }
 
 .backdrop.is-hidden .modal{
@@ -796,7 +804,6 @@ img{
     line-height: 1.5;
     color: var(--secondary-color);
     text-align: center;
-    margin-top: 48px;
     margin-bottom: 16px;
 }
 
@@ -876,13 +883,12 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #8E8F99;
     display: flex;
     text-align: center;
-    justify-content: center;
+    justify-content: left;
     fill: transparent;
     display: flex;
-        align-items: center;
         gap: 8px;
         position: relative;
-
+align-items: center;
 }
 
 
